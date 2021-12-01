@@ -1,6 +1,6 @@
 # React: Temperature Conversion
 
-For this challenge, we're going to ask you to convert our existing React project from class-based components to functional components, to gain a better understanding about the React Component LifeCycle as well as understanding how to work with the `useEffect()` hook. This will also give you some more practice with understanding class-based component syntax.
+For this challenge, we're going to ask you to convert our existing React project from class-based components to functional components, to gain a better understanding about the React Component Lifecycle as well as understanding how to work with the `useEffect()` hook. This will also give you some more practice with understanding class-based component syntax.
 
 # Initial Set-up
 
@@ -16,11 +16,11 @@ Go through your usual set-up commands (`npm install` and `npm start`) to get the
 
 # Initial Challenge
 
-Your first task is to look through the provided code and fully understand how the application is working. If you don't understand something, make sure you ask questions! You should ultimately understand what the life-cycle methods are doing with-in this app.
+Your first task is to look through the provided code and fully understand how the application is working. If you don't understand something, make sure you ask questions! You should ultimately understand what the lifecycle methods are doing with-in this app.
 
 # Main Challenge
 
-Now that you understand how the application works with the life-cycle methods, it's time for you to covert what we from class-based components to function based components. The main thing you'll have to work with is the `useEffect()` hook, to replace the class component life-cycle methods that we've implemented.
+Now that you understand how the application works with the lifecycle methods, it's time for you to covert what we have from class-based components to function based components. The main thing you'll have to work with is the [`useEffect()`](https://reactjs.org/docs/hooks-effect.html) hook, to replace the class component life-cycle methods that we've implemented.
 
 The four components that need to be refactored are:
 - App.js
