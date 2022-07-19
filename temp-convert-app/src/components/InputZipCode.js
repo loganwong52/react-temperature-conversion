@@ -1,27 +1,25 @@
-import { Component } from "react"
+import { React } from "react"
 
-class InputZipCode extends Component {
+function InputZipCode(props) {
   // handlers
-  handleZipCode = () => {
+  const handleZipCode = () => {
     const inputZipCode = document.getElementById("input-zipcode")
     console.log(inputZipCode.value)
-    this.props.updateZipCode(inputZipCode.value)
+    props.updateZipCode(inputZipCode.value)
   }
 
   // render
-  render() {
-    return (
+  return (
+    <div>
+      <hr />
       <div>
-        <hr />
-        <div>
-          <label>Enter Zip Code: </label>
-          <input id="input-zipcode" placeholder="zip code"/>
-          <button onClick={this.handleZipCode}>{ this.props.buttonText }</button>
-        </div>
-        <hr />
+        <label>Enter Zip Code: </label>
+        <input id="input-zipcode" placeholder="zip code" />
+        <button onClick={handleZipCode}>{props.buttonText}</button>
       </div>
-    )
-  }
+      <hr />
+    </div>
+  )
 }
 
 export default InputZipCode;

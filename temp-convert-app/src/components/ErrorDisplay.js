@@ -1,22 +1,28 @@
-import { Component } from "react"
+import { React, useEffect } from "react"
 
-class ErrorDisplay extends Component {
+function ErrorDisplay(props) {
 
-  componentDidMount() {
+  // componentDidMount() {
+  //   console.log("!! There was an error !!")
+  // }
+
+  useEffect(() => {
     console.log("!! There was an error !!")
-  }
 
-  componentWillUnmount() {
-    console.log("++ The error was resolved ++")
-  }
+    return () => {
+      console.log("++ The error was resolved ++")
+    }
+  }, [])
 
-  render() {
-    return (
-      <div>
-        <p className="error">Error: { this.props.message }</p>
-      </div>
-    )
-  }
+  // componentWillUnmount() {
+  //   console.log("++ The error was resolved ++")
+  // }
+
+  return (
+    <div>
+      <p className="error">Error: {props.message}</p>
+    </div>
+  )
 }
 
 export default ErrorDisplay;
